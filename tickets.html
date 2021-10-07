@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<!--==================================================================
+//
+// Web site: <Atlantis Uncovered>
+// Web page: <Tickets>
+// Description:
+//   <brief description of web page including its inputs,
+// processing, and outputs>
+// 
+//=================================================================-->
+
+<head>
+  
+  <title>Tickets</title>
+  <meta charset="UTF-8">
+  <meta name="author" content="Sadia">
+  <meta name="description" content="This page is the rides page with descriptions
+	and intensity rank for each ride">
+  <meta name="keywords" content="themepark">
+  <link rel="stylesheet" href="parkstyles.css">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" 
+   rel="stylesheet">
+
+</head>
+
+<body>
+
+<!--------HEADER AND NAVIGATION-------->
+<div class="pageHeader">
+   <div class="headerContainer">
+	<div class="navBar">
+		<div class="homeImage">
+		<img src="images/logo.png" width="250" height="250">
+		</div>
+	
+		<nav> 
+		   <ul>
+			<li><a href="park.html">Park</a></li>
+			<li><a href="rides.html">Rides</a></li>
+			<li><a href="tickets.html">Tickets</a></li>
+		   </ul>
+		</nav>
+	</div>
+   </div>
+</div>
+
+<!-------- TICKETS CONTENT-------->
+
+<div class="container">
+	<div class="rowForm">
+		<h2>Buy Your Tickets Now!</h2> 
+                
+		<form method="get" enctype="application/x-www-form-urlencoded"
+                action="http://www.strategicsystems.biz/wsu/CSC5750/CSC5750-ServerResponse.php">
+    	<div class="row">
+		   
+
+<!-------- NAME -------->
+
+	            <div class="col">
+                    <label for="fname">First Name:</label><br>
+		    </div>
+
+                    <input type="text" id="fname" name="fname"><br>
+
+
+	            <div class="col">
+                    <label for="lname">Last name:</label><br>
+		    </div>
+
+                    <input type="text" id="lname" name="lname"><br> 
+
+<!-------- email -------->
+
+	            <div class="col">
+                    <label for="email">Email Address:</label><br>
+		    </div>
+
+                    <input type="text" id="email" name="email"><br>
+
+<!-------- VIsit date -------->
+	             
+		    <div class="col">
+                    <label for="visitDate">Visit Date (May-October):</label><br>
+		    </div>
+
+                    <input type="number" id="visitDate" name="visitDate">
+
+<!-------- Parking RB -------->
+		<div class="col>
+			<p> Select Parking: </p> 
+			<input type="radio" id="html" name="fav_language" value="HTML">
+  			<label for="day">Half Day($0)</label><br>
+  			<input type="radio" id="css" name="fav_language" value="CSS">
+  			<label for="overnight">One Day Parking ($15)</label><br>
+			
+		</div> <br>
+
+
+<!-------- Discount code -------->
+		    
+		<div class=col>
+                    <label for="discCode">Discount code:</label><br>
+		</div>
+                    <input type="text" id="discCode" name="discCode"><br>
+
+<!-------- Payment Type -------->
+		<div class=col>
+                    <label for="payType">Payment Type:</label><br>
+		</div>
+
+                    <input type="text" id="payType" name="payType"><br><br>
+
+                    <input type="submit" value="Submit">
+                    <input type="Reset" value="Reset">
+
+                </form>
+
+<br><br> 
+
+<div class ="container">
+
+<h2> Map of Park!</h2> 
+<img src = "images/parkMap.jpg"> <br> <br> 
+
+</div>
+
+
+<!----------------FOOTER---------------->
+
+<div class="footer">
+	<div class="footerContainer">
+		<div class="footerRow">
+			<div class="footerCol">
+				<img src="images/logo.png" width="100" height="100">
+				<p> Parking Dock Address: <br>
+				1765 Manhattan Ave <br> 
+				New York, New York 54678<br><br> 
+				Atlantis Uncovered Address: <br> 
+				1010 Atlantic Highway<br> 
+				Atlantic Ocean<br> 
+			</div>
+			
+			<div class="footerCol">
+				<h3><br><br><br>Important Links</h3>
+				<ul>
+					<li><a href="park.html">Home</a></li>
+					<li><a href="rides.html">Rides</a></li>
+					<li><a href="tickts.html">Tickets</a></li><br> 
+					<li>Contact Us: info@atlantisuncovererd.org</li>
+
+				</ul>
+
+			</div>
+
+
+		</div>
+			
+	</div>
+
+	&copy; Copyright 2021 Atlantis Uncovered Inc.
+</div>
+  
+  
+</body>
+ 
+</html>

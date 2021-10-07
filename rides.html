@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<!--==================================================================
+//
+// Web site: <Atlantis Uncovered>
+// Web page: <Rides>
+// Description:
+//   <brief description of web page including its inputs,
+// processing, and outputs>
+// 
+//=================================================================-->
+
+<head>
+  
+  <title>Rides</title>
+  <meta charset="UTF-8">
+  <meta name="author" content="Sadia">
+  <meta name="description" content="This page is the rides page with descriptions
+	and intensity rank for each ride">
+  <meta name="keywords" content="themepark">
+  <link rel="stylesheet" href="parkstyles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" 
+   rel="stylesheet">
+
+  <!---Adding datatable style--->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.11.2/css/jquery.dataTables.min.css">
+  <!---Adding JQuery source--->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script> 
+  <!---Adding datatable source--->
+  <script src="https://cdn.datatables.net/1.11.2/js/jquery.dataTables.min.js"></script> 
+
+  <!---initialize datatable---> 
+
+  <script> 
+ 	 $(document).ready(function() {
+    		$('#example').DataTable();
+	} );
+  </script> 
+
+</head>
+
+<body>
+
+<!--------HEADER AND NAVIGATION-------->
+<div class="pageHeader">
+   <div class="headerContainer">
+	<div class="navBar">
+		<div class="homeImage">
+		<img src="images/logo.png" width="250" height="250">
+		</div>
+	
+		<nav> 
+		   <ul>
+			<li><a href="park.html">Park</a></li>
+			<li><a href="rides.html">Rides</a></li>
+			<li><a href="tickets.html">Tickets</a></li>
+		   </ul>
+		</nav>
+	</div>
+   </div>
+</div>
+
+<!--------RIDES CONTENT-------->
+<div class="rideTable">
+  <table id="Rides" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th><br>Ride Name</th>
+                <th>Description</th>
+                <th>Thrill Level</th>
+                <th>Image</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Triton's Terror</td>
+                <td>This thrilling rollercoaster will give you a taste of 
+		both land and water, <br>with what seems like a primary on land 
+		experience you'd be surprised to<br>find out otherwise! 
+		With speeds up to 90 mph, you better hold your horses! </td>
+                <td><span style='font-size:50px;'>&#9760;</span>
+		    <span style='font-size:50px;'>&#9760;</span>
+		    <span style='font-size:50px;'>&#9760;</span>
+		    <span style='font-size:50px;'>&#9760;</span></td>
+                <td><img src="images/ride1.jpg" width="200" height="200"></td>
+            </tr>
+            <tr>
+                <td>Wind Seeker</td>
+                <td>Known as the human dryer, after a day of getting soaked 
+		you are guaranteed<br> to dry off and enjoy this relaxing cruise 
+		which comes with breathtaking views <br> of the entire park! </td>
+                <td><span style='font-size:50px;'>&#9760;</span></td>
+                <td><img src="images/ride2.jpg" width="200" height="200"></td>
+            </tr>
+            <tr>
+                <td>Atlantis Dipper</td>
+                <td>This ride being the main attraction of the park, you are
+		<b>GUARANTEED</b><br>the full Atlantis experience!This water slide 
+		takes you deep down<br> 100 meters under the ocean to view THE Atlantis
+	   	From our top of the line<br> transparent water slides, top speeds, 
+		and skilled guides, you are guaranteed<br> to enjoy this once in 
+		a life time experience!</td>
+                <td><span style='font-size:50px;'>&#9760;</span>
+		    <span style='font-size:50px;'>&#9760;</span>
+		    <span style='font-size:50px;'>&#9760;</span>
+		    <span style='font-size:50px;'>&#9760;</span>
+		    <span style='font-size:50px;'>&#9760;</span></td>
+                <td><img src="images/ride4.jpg" width="200" height="200"></td>
+            </tr>
+            <tr>
+                <td>Siren's Serenade</td>
+                <td>This thriling boat ride takes place in a tunnel built 
+		from the top to the<br> bottom of Mermaid's Mountain! In the
+		center of the Mountain as you<br> exit you will view the myseterious
+		moon pool. Legend has it, many sailors<br> have been lured to their deaths
+		by the siren's serenade. Enter if you dare!</td>
+                <td><span style='font-size:50px;'>&#9760;</span>
+		    <span style='font-size:50px;'>&#9760;</span>
+		    <span style='font-size:50px;'>&#9760;</span></td>
+                <td><img src="images/ride5.jpg" width="200" height="200"></td>
+            </tr>
+            <tr>
+                <td>The Midway</td>
+                <td>The Midway ferriswheel is placed directly at the center 
+		of the park with<br> maximum height of 400 meters! Though this height 
+		may be frightening<br> for some, the view at the top of this attraction
+		is Absolutely worth it.</td>
+                <td><span style='font-size:50px;'>&#9760;</span></td>
+                <td><img src="images/ride6.jpg" width="200" height="200"></td>
+            </tr>
+  
+	    <tr>
+                <td>The Fireball</td>
+                <td>Different from most of our other attractions, 
+		one of our most popular<br> attractions, The Fireball
+		Ball offers one of the most thrilling experiences<br> as the 
+		faastest ride at the park! With the elliptical shape 
+		and top speed<br>of 145 miles this ride is for the daring!</td>
+                <td><span style='font-size:50px;'>&#9760;</span>
+		    <span style='font-size:50px;'>&#9760;</span>
+		    <span style='font-size:50px;'>&#9760;</span>
+		    <span style='font-size:50px;'>&#9760;</span>
+		    <span style='font-size:50px;'>&#9760;</span></td>
+                <td><img src="images/ride7.jpg" width="200" height="200"></td>
+            </tr>
+
+	    <tr>
+                <td>Children's Corner</td>
+                <td>This waterpark attraction is targeted for those aged between 3-12.<br> 
+		Packed with waterslides, tunnels, swings, and an entire playscape<br>
+		your children will be more than occupied! Parent supervision is required.</td>
+                <td></td>
+                <td><img src="images/ride3.jpg" width="200" height="200"></td>
+            </tr>
+    </table>
+</div>
+<!----------------FOOTER---------------->
+
+<div class="footer">
+	<div class="footerContainer">
+		<div class="footerRow">
+			<div class="footerCol">
+				<img src="images/logo.png" width="100" height="100">
+				<p> Parking Dock Address: <br>
+				1765 Manhattan Ave <br> 
+				New York, New York 54678<br><br> 
+				Atlantis Uncovered Address: <br> 
+				1010 Atlantic Highway<br> 
+				Atlantic Ocean<br> 
+			</div>
+			
+			<div class="footerCol">
+				<h3><br><br><br>Important Links</h3>
+				<ul>
+					<li><a href="park.html">Home</a></li>
+					<li><a href="rides.html">Rides</a></li>
+					<li><a href="tickts.html">Tickets</a></li><br> 
+					<li>Contact Us: info@atlantisuncovererd.org</li>
+
+				</ul>
+
+			</div>
+
+
+		</div>
+			
+	</div>
+
+	&copy; Copyright 2021 Atlantis Uncovered Inc.
+</div>
+  
+  
+</body>
+ 
+</html>
